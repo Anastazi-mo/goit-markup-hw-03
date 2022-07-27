@@ -1,0 +1,401 @@
+:root {
+  --primary-text-color: #212121;
+  --title-text-color: #757575;
+  --accent-color: #2196f3;
+  --additional-color: #f5f4fa;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--title-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Logo */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.logo-accent {
+  color: #000000;
+}
+
+.logo-accent:hover {
+  color: var(--accent-color);
+}
+
+/* nav */
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav-contact .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav-contact .link:hover,
+.site-nav-contact .link:focus {
+  color: var(--accent-color);
+}
+
+.main-nav,
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav-contact {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.site-nav-contact .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
+}
+/* Hero */
+.hero {
+  text-align: center;
+  background-color: #2f303a;
+  padding-bottom: 200px;
+  padding-top: 200px;
+}
+
+.hero-title {
+  margin-bottom: 30px;
+  color: var(--primary-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0;
+
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  line-height: 1.88;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--title-text-color);
+}
+
+/* Sections */
+
+.benefits {
+  padding-top: 114px;
+  padding-bottom: 74px;
+}
+
+.benefits-list {
+  display: flex;
+}
+
+.benefits-box:not(:last-child) {
+  margin-right: 30px;
+}
+.benefits-list .title {
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-list .description {
+  margin-bottom: 0;
+
+  line-height: 1.7;
+}
+
+.work-section {
+  padding-top: 0;
+}
+
+/* works */
+
+.heading {
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+.work-list {
+  display: flex;
+}
+
+.work:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* team */
+
+.section-team .title {
+  margin-bottom: 10px;
+
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.section-team .description {
+  font-size: 16px;
+  line-height: 1.19;
+  margin-bottom: 0;
+}
+
+.section-team {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-person:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-footer {
+  padding: 30px;
+  text-align: center;
+  background-color: var(--primary-white-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--primary-text-color);
+}
+
+.footer .logo-accent {
+  color: var(--primary-white-color);
+}
+
+.footer .logo-accent:hover {
+  color: var(--accent-color);
+}
+
+.address {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-style: normal;
+}
+.footer-list .link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  line-height: 1.7;
+}
+
+.footer-list .link.address {
+  color: var(--primary-white-color);
+}
+
+.footer-list .link:hover,
+.footer-list .link:focus {
+  text-decoration: underline;
+}
+
+.footer-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-list {
+  margin-top: 20px;
+}
+
+/* Portfolio page */
+
+.button-list .list {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 0;
+
+  font-family: Roboto;
+  letter-spacing: 0.03em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  color: var(--primary-text-color);
+  background-color: var(--additional-color);
+}
+
+.button-list .list.current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button-list .list:hover,
+.button-list .list:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.button-list {
+  display: flex;
+  padding-bottom: 50px;
+  justify-content: center;
+}
+
+.filter + .filter {
+  margin-left: 8px;
+}
+
+/*portfolio */
+
+.portfolio-list .title {
+  margin-bottom: 4px;
+
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-list .description {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.portfolio-list > .flex-element {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.flex-footer {
+  background-color: var(--primary-white-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
