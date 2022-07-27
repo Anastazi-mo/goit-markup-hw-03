@@ -279,6 +279,9 @@ img {
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--primary-text-color);
 }
 
@@ -291,8 +294,6 @@ img {
 }
 
 .address {
-  padding-top: 60px;
-  padding-bottom: 60px;
   font-style: normal;
 }
 .footer-list .link {
